@@ -13,3 +13,8 @@ Changes Clevo (Sager) Laptop's Keyboard Backlit LED colour based on the current 
 4. Add `sudo /path/to/clevo_fx.sh` to Gnome's autostart. (You can use the provides `.deb` to install an app for the same.)
 5. Use `clevo_fx_test.sh` to get app name and use that to modify config.xml accordingly.
 
+
+Check it live in action below:
+
+[![ClevoFX Keyboard for Linux](https://img.youtube.com/vi/i6H8X8P0x2o/0.jpg)](https://www.youtube.com/watch?v=i6H8X8P0x2o)
+
