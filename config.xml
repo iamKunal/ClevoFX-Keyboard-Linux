@@ -1,0 +1,47 @@
+<app-list>
+
+    <application>
+        <window name="firefox" />
+        <kb_color>yellow white blue</kb_color>
+    </application>
+
+    <application>
+        <window name="chrome" />
+        <kb_color>red blue yellow</kb_color>
+    </application>
+
+    <application>
+        <window name="sublime_text" />
+        <kb_color>blue green red</kb_color>
+    </application>
+
+    <application>
+        <window name="gedit" />
+        <kb_color>cyan cyan blue</kb_color>
+    </application>
+
+    <application>
+        <window name="nautilus-deskto" />
+        <kb_color>blue cyan blue</kb_color>
+    </application>
+
+    <application>
+        <window name="terminator" />
+        <kb_color>red red red</kb_color>
+    </application>
+
+    <application>
+        <window name="gnome-terminal-" />
+        <kb_color>green green green</kb_color>
+    </application>
+
+    <application>
+        <window name="nautilus" />
+        <kb_color>white white cyan</kb_color>
+    </application>
+
+    <default>
+        <kb_color>red green blue</kb_color>
+    </default>
+
+</app-list>
