@@ -1,0 +1,35 @@
+<app-list>
+
+    <application>
+        <kb_color window="firefox">yellow white blue</kb_color>
+    </application>
+
+    <application>
+        <kb_color window="Google-chrome">red blue yellow</kb_color>
+    </application>
+
+    <application>
+        <kb_color window="sublime_text">blue green red</kb_color>
+    </application>
+
+    <application>
+        <kb_color window="gedit">cyan cyan blue</kb_color>
+    </application>
+
+    <application>
+        <kb_color window="Terminator">red red red</kb_color>
+    </application>
+
+    <application>
+        <kb_color window="X-terminal-emulator">red red red</kb_color>
+    </application>
+
+    <application>
+        <kb_color window="Nautilus">white white cyan</kb_color>
+    </application>
+
+    <default>
+        <kb_color>red green blue</kb_color>
+    </default>
+
+</app-list>

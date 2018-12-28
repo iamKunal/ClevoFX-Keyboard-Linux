@@ -1,18 +1,21 @@
 # ClevoFX-Keyboard-Linux
 Changes Clevo (Sager) Laptop's Keyboard Backlit LED colour based on the current open app.
 
+Works best with i3wm (use the `i3wm` branch).
+
 ## Requires
-1. Driver from (https://bitbucket.org/tuxedocomputers/clevo-xsm-wmi)[https://bitbucket.org/tuxedocomputers/clevo-xsm-wmi]
-2. xmlstarlet
-3. xdotools
+1. Driver from [https://bitbucket.org/tuxedocomputers/clevo-xsm-wmi](https://bitbucket.org/tuxedocomputers/clevo-xsm-wmi)
+2. `xmlstarlet`
+3. `i3ipc` (from pip)
 
 ## Instructions
-1. Main script is `clevo_fx.sh`
-2. Add it to `sudoers` so it doesn't requires a password with sudo.
-3. Modify clevo_fx.sh to change your $HOME accordingly
-4. Add `sudo /path/to/clevo_fx.sh` to Gnome's autostart. (You can use the provides `.deb` to install an app for the same.)
-5. Use `clevo_fx_test.sh` to get app name and use that to modify config.xml accordingly.
-
+1. Do `groupadd --system clevo_backlight` (use sudo for permission problems)
+2. Do `usermod --append --groups clevo_backlight $USER` (again sudo for perms).
+3. Copy the contents of `setclevopermissions.service` to `/etc/systemd/system/setclevopermissions.service`
+4. Do `systemctl enable setclevopermissions`
+5. Add `change_kb_color.py` to i3 startup by adding `exec /path/to/change_kb_color.py` to `~/.config/i3/config`
+5. Copy the folder `clevo_fx` to `~/.config/`
+6. Modify `/.config/clevo_fx/apps.xml` to suit your needs (use `xprop` and click on window, the second `WM_CLASS(STRING)` property is to be used.
 
 Check it live in action below:
 
