@@ -15,7 +15,7 @@ Works best with i3wm (use the `i3wm` branch).
 4. Do `systemctl enable setclevopermissions`
 5. Add `change_kb_color.py` to i3 startup by adding `exec /path/to/change_kb_color.py` to `~/.config/i3/config`
 5. Copy the folder `clevo_fx` to `~/.config/`
-6. Modify `/.config/clevo_fx/apps.xml` to suit your needs (use `xprop` and click on window, the second `WM_CLASS(STRING)` property is to be used.
+6. Modify `~/.config/clevo_fx/apps.xml` to suit your needs (use `xprop` and click on window, the second `WM_CLASS(STRING)` property is to be used.
 
 Check it live in action below:
 
